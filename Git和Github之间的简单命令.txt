@@ -4,5 +4,7 @@
 拉取GitHub的更新到本地：git pull origin  main 
 将本地的代码更新至GitHub：1.git add 文件 例如：git add test.txt 或git add * 这是更新全部 
                                             2.git push origin main
+单独提交一个文件夹:git add ./文件夹名
+单独提交一个文件夹中的一个文件：git add 文件夹名/文件
 
 
