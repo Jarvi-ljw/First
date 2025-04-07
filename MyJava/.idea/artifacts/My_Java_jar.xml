@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact name="My Java:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/My_Java_jar</output-path>
+    <root id="root">
+      <element id="archive" name="My Java.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$USER_HOME$/Desktop/计算器/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="My Java" />
+        <element id="module-output" name="study java" />
+        <element id="module-output" name="student-sys" />
+        <element id="module-output" name="Calculator" />
+      </element>
+    </root>
+  </artifact>
+</component>
