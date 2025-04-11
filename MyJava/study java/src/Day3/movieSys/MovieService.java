@@ -119,6 +119,7 @@ public class MovieService {
         System.out.println("请输入电影明星的名称");
         String MovieActor = sc.next();
         for (int i=movies.size()-1;i>=0;i--){
+            //遍历电影集合来判断是否有该电影明星
             Movie movie = movies.get(i);
             if (movie.getActor().contains(MovieActor)){
                 movies.remove(movie);

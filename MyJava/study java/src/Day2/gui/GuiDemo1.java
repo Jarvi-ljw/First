@@ -27,15 +27,31 @@ public class GuiDemo1 {
 
         jf.add(panel);
 
-        jb.addActionListener(new ActionListener(){
+        //创建对象调用
+       //jb.addActionListener(new BtnActionListener());
+
+        //匿名内部类调用
+       /* jb.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(jf, "按钮被点击了");
-                System.out.println("按钮被点击了");
+
             }
+        });*/
+
+        //lambda调用：ActionListener中的actionPerformed()方法中的形参列表->{};
+        jb.addActionListener((ActionEvent e )->{
+            JOptionPane.showMessageDialog(jf,"按钮被点击");
         });
 
+
+
         jf.setVisible(true);//设置窗体可见
+    }
+}
+ class BtnActionListener implements ActionListener{
+    @Override
+    public void actionPerformed(ActionEvent e){
+        System.out.println("按钮被点击了");
     }
 }
 /*class MyActiionListener implements ActionListener {
